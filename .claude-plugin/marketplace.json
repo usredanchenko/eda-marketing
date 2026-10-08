@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "eda-marketing",
+  "description": "Short-form video marketing pipeline for Claude Code: research → ideas → hooks → script → shot list → Remotion edit → HyperFrames motion → captions → QA → analytics.",
+  "owner": { "name": "Egor", "url": "https://github.com/usredanchenko" },
+  "plugins": [
+    {
+      "name": "eda-marketing",
+      "source": "./plugin",
+      "description": "Turn a topic into a researched, scripted, edited and QA-checked short video package (TikTok, Reels, Shorts) with brand-safe facts, smart captions and an analytics loop.",
+      "category": "productivity",
+      "homepage": "https://github.com/usredanchenko/eda-marketing"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "topic": "Why a 25-minute timer beats a to-do list",
+  "ideas": [
+    {
+      "id": "i01",
+      "title": "The list that grew, the work that didn't",
+      "logline": "Alex admits his to-do list grew every morning while nothing got started, then shows the one-question start screen.",
+      "template": "DevDiary",
+      "angle": "confession → product decision",
+      "scores": {
+        "relevance": 5,
+        "novelty": 3,
+        "audienceFit": 5,
+        "visualPotential": 4,
+        "emotionalPotential": 4,
+        "storytellingPotential": 4,
+        "productionComplexity": 2,
+        "authenticity": 5,
+        "productRelevance": 5
+      },
+      "rationale": "Relatable pain from AUDIENCE.md plus a real build decision; existing example screens cover the product part.",
+      "total": 87.7,
+      "duplicateOf": null
+    },
+    {
+      "id": "i02",
+      "title": "Choosing is the work you avoid",
+      "logline": "A long list forces a decision before any work starts; one task removes the decision.",
+      "template": "TalkingHeadWithBroll",
+      "angle": "explainer",
+      "scores": {
+        "relevance": 4,
+        "novelty": 3,
+        "audienceFit": 4,
+        "visualPotential": 3,
+        "emotionalPotential": 3,
+        "storytellingPotential": 3,
+        "productionComplexity": 2,
+        "authenticity": 4,
+        "productRelevance": 4
+      },
+      "rationale": "Clear thought, but weaker story without the dev-diary frame.",
+      "total": 71.5,
+      "duplicateOf": null
+    },
+    {
+      "id": "i03",
+      "title": "I deleted my to-do list for a week",
+      "logline": "Alex runs one task per timer for a week and reports honestly.",
+      "template": "StoryTime",
+      "angle": "experiment",
+      "scores": {
+        "relevance": 4,
+        "novelty": 4,
+        "audienceFit": 4,
+        "visualPotential": 3,
+        "emotionalPotential": 4,
+        "storytellingPotential": 5,
+        "productionComplexity": 4,
+        "authenticity": 4,
+        "productRelevance": 3
+      },
+      "rationale": "Strong story, but needs a week of real footage and risks sounding like an outcome promise.",
+      "total": 74.6,
+      "duplicateOf": null
+    },
+    {
+      "id": "i04",
+      "title": "Why my timer has no streaks",
+      "logline": "Missing a day should not cost you anything; the app keeps no streaks.",
+      "template": "FeatureReveal",
+      "angle": "feature",
+      "scores": {
+        "relevance": 4,
+        "novelty": 3,
+        "audienceFit": 4,
+        "visualPotential": 3,
+        "emotionalPotential": 3,
+        "storytellingPotential": 3,
+        "productionComplexity": 2,
+        "authenticity": 4,
+        "productRelevance": 5
+      },
+      "rationale": "Confirmed fact (no streaks), but a separate topic; better as its own video.",
+      "total": 73.7,
+      "duplicateOf": null
+    },
+    {
+      "id": "i05",
+      "title": "The email I opened instead of working",
+      "logline": "A notification card plays the distraction; the timer answers it.",
+      "template": "MemeExplainer",
+      "angle": "meme",
+      "scores": {
+        "relevance": 4,
+        "novelty": 3,
+        "audienceFit": 4,
+        "visualPotential": 5,
+        "emotionalPotential": 3,
+        "storytellingPotential": 3,
+        "productionComplexity": 2,
+        "authenticity": 3,
+        "productRelevance": 3
+      },
+      "rationale": "Visual and quick, less authentic as a standalone; works as a beat inside i01.",
+      "total": 70.6,
+      "duplicateOf": null
+    },
+    {
+      "id": "i06",
+      "title": "Pomodoro didn't work for me — until one task",
+      "logline": "Alex says classic pomodoro failed because he never picked the task first.",
+      "template": "TalkingHead",
+      "angle": "contrarian",
+      "scores": {
+        "relevance": 4,
+        "novelty": 4,
+        "audienceFit": 4,
+        "visualPotential": 2,
+        "emotionalPotential": 3,
+        "storytellingPotential": 4,
+        "productionComplexity": 1,
+        "authenticity": 4,
+        "productRelevance": 3
+      },
+      "rationale": "Cheap to film, honest; low visual change.",
+      "total": 73.1,
+      "duplicateOf": null
+    },
+    {
+      "id": "i07",
+      "title": "Building the start screen in public",
+      "logline": "Blockout → example UI of the one-question start screen.",
+      "template": "DevDiary",
+      "angle": "build in public",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "audienceFit": 3,
+        "visualPotential": 4,
+        "emotionalPotential": 2,
+        "storytellingPotential": 3,
+        "productionComplexity": 3,
+        "authenticity": 4,
+        "productRelevance": 4
+      },
+      "rationale": "Good for the pillar, but no viewer pain in the hook.",
+      "total": 65,
+      "duplicateOf": null
+    },
+    {
+      "id": "i08",
+      "title": "3 of 5 beta features: what's next",
+      "logline": "Beta progress update with the confirmed milestone.",
+      "template": "DevDiary",
+      "angle": "progress update",
+      "scores": {
+        "relevance": 3,
+        "novelty": 2,
+        "audienceFit": 3,
+        "visualPotential": 3,
+        "emotionalPotential": 2,
+        "storytellingPotential": 2,
+        "productionComplexity": 2,
+        "authenticity": 4,
+        "productRelevance": 4
+      },
+      "rationale": "Uses a confirmed fact, but an update without a thought is weak.",
+      "total": 60.2,
+      "duplicateOf": null
+    },
+    {
+      "id": "i09",
+      "title": "A to-do list vs a timer, side by side",
+      "logline": "Split screen: growing list on one side, one running timer on the other.",
+      "template": "BeforeAfter",
+      "angle": "comparison",
+      "scores": {
+        "relevance": 4,
+        "novelty": 2,
+        "audienceFit": 4,
+        "visualPotential": 4,
+        "emotionalPotential": 2,
+        "storytellingPotential": 2,
+        "productionComplexity": 3,
+        "authenticity": 3,
+        "productRelevance": 4
+      },
+      "rationale": "Readable, but risks implying an outcome comparison we cannot back.",
+      "total": 62.7,
+      "duplicateOf": null
+    },
+    {
+      "id": "i10",
+      "title": "What breaks your focus? Viewers answer",
+      "logline": "Collect real comments about distraction and react.",
+      "template": "Reaction",
+      "angle": "community",
+      "scores": {
+        "relevance": 3,
+        "novelty": 3,
+        "audienceFit": 4,
+        "visualPotential": 2,
+        "emotionalPotential": 3,
+        "storytellingPotential": 3,
+        "productionComplexity": 3,
+        "authenticity": 3,
+        "productRelevance": 2
+      },
+      "rationale": "Needs real comments first; fictional ones would need labels.",
+      "total": 57.9,
+      "duplicateOf": null
+    }
+  ],
+  "top": [
+    {
+      "ideaId": "i01",
+      "why": "Highest fit: a real pain from the audience doc, told by Alex at the desk, paid off by an existing example screen and confirmed facts."
+    },
+    {
+      "ideaId": "i03",
+      "why": "Best story, kept as a follow-up once a real week of footage exists."
+    },
+    {
+      "ideaId": "i04",
+      "why": "Confirmed fact (no streaks) and strong product fit; used as the payoff line here and kept as its own future video."
+    }
+  ]
+}

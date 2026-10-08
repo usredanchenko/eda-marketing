@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-10-08-acme-focus-why-a-25-minute-timer-beats-a-to-do-list",
+  "brand": "acme-focus",
+  "topic": "Why a 25-minute timer beats a to-do list",
+  "created": "2026-10-08",
+  "mode": "production",
+  "stage": "props",
+  "template": "DevDiary",
+  "formats": [
+    "9x16"
+  ],
+  "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+  ],
+  "campaignId": null,
+  "demo": false,
+  "gates": {
+    "brief": {
+      "status": "approved",
+      "at": "2026-10-08T10:29:20.632Z",
+      "quote": "fictional example package",
+      "by": "delegated"
+    },
+    "ideaSelected": {
+      "status": "approved",
+      "at": "2026-10-08T10:29:20.948Z",
+      "quote": "fictional example package",
+      "by": "delegated"
+    },
+    "hooksSelected": {
+      "status": "approved",
+      "at": "2026-10-08T10:29:21.261Z",
+      "quote": "fictional example package",
+      "by": "delegated"
+    },
+    "scriptApproved": {
+      "status": "approved",
+      "at": "2026-10-08T10:29:21.572Z",
+      "quote": "fictional example package",
+      "by": "delegated"
+    },
+    "productionApproved": {
+      "status": "approved",
+      "at": "2026-10-08T10:29:21.885Z",
+      "quote": "fictional example package",
+      "by": "delegated"
+    },
+    "finalRender": {
+      "status": "pending",
+      "at": null,
+      "quote": null,
+      "by": null
+    },
+    "publish": {
+      "status": "pending",
+      "at": null,
+      "quote": null,
+      "by": null
+    }
+  },
+  "motionBriefs": {},
+  "selected": {
+    "ideaId": "i01",
+    "hookId": "h01"
+  },
+  "published": [],
+  "notes": [
+    "Fictional example package: all gates delegated; draft only (estimated timing, no voice, stand-in footage)."
+  ]
+}

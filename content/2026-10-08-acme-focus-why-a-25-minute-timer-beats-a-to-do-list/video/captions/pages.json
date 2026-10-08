@@ -1,0 +1,720 @@
+{
+  "timingSource": "estimated",
+  "mode": "replace",
+  "pages": [
+    {
+      "startMs": 80,
+      "endMs": 2939,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "Every",
+              "startMs": 80,
+              "endMs": 732,
+              "emphasis": false
+            },
+            {
+              "text": "morning",
+              "startMs": 732,
+              "endMs": 1167,
+              "emphasis": false
+            },
+            {
+              "text": "my",
+              "startMs": 1167,
+              "endMs": 1384,
+              "emphasis": false
+            },
+            {
+              "text": "to-do",
+              "startMs": 1167,
+              "endMs": 1819,
+              "emphasis": false
+            },
+            {
+              "text": "list",
+              "startMs": 1819,
+              "endMs": 2037,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "got",
+              "startMs": 2037,
+              "endMs": 2254,
+              "emphasis": false
+            },
+            {
+              "text": "longer.",
+              "startMs": 2254,
+              "endMs": 2689,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 3009,
+      "endMs": 4346,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "And",
+              "startMs": 3009,
+              "endMs": 3226,
+              "emphasis": false
+            },
+            {
+              "text": "I",
+              "startMs": 3009,
+              "endMs": 3443,
+              "emphasis": false
+            },
+            {
+              "text": "started",
+              "startMs": 3443,
+              "endMs": 3661,
+              "emphasis": false
+            },
+            {
+              "text": "nothing.",
+              "startMs": 3661,
+              "endMs": 4096,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 4580,
+      "endMs": 5392,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "I'm",
+              "startMs": 4580,
+              "endMs": 4797,
+              "emphasis": false
+            },
+            {
+              "text": "Alex,",
+              "startMs": 4797,
+              "endMs": 5232,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 5392,
+      "endMs": 7816,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "building",
+              "startMs": 5392,
+              "endMs": 5827,
+              "emphasis": false
+            },
+            {
+              "text": "a",
+              "startMs": 5827,
+              "endMs": 6044,
+              "emphasis": false
+            },
+            {
+              "text": "focus",
+              "startMs": 5827,
+              "endMs": 6479,
+              "emphasis": false
+            },
+            {
+              "text": "timer",
+              "startMs": 6479,
+              "endMs": 6914,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "on",
+              "startMs": 6914,
+              "endMs": 7131,
+              "emphasis": false
+            },
+            {
+              "text": "my",
+              "startMs": 6914,
+              "endMs": 7349,
+              "emphasis": false
+            },
+            {
+              "text": "own.",
+              "startMs": 6914,
+              "endMs": 7566,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 7886,
+      "endMs": 9875,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "Three",
+              "startMs": 7886,
+              "endMs": 8103,
+              "emphasis": false
+            },
+            {
+              "text": "of",
+              "startMs": 8103,
+              "endMs": 8321,
+              "emphasis": false
+            },
+            {
+              "text": "five",
+              "startMs": 8103,
+              "endMs": 8538,
+              "emphasis": false
+            },
+            {
+              "text": "beta",
+              "startMs": 8538,
+              "endMs": 8973,
+              "emphasis": false
+            },
+            {
+              "text": "features",
+              "startMs": 8973,
+              "endMs": 9408,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "shipped.",
+              "startMs": 9408,
+              "endMs": 9625,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 10180,
+      "endMs": 11952,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "A",
+              "startMs": 10180,
+              "endMs": 10397,
+              "emphasis": false
+            },
+            {
+              "text": "long",
+              "startMs": 10180,
+              "endMs": 10615,
+              "emphasis": false
+            },
+            {
+              "text": "list",
+              "startMs": 10615,
+              "endMs": 10832,
+              "emphasis": false
+            },
+            {
+              "text": "makes",
+              "startMs": 10832,
+              "endMs": 11050,
+              "emphasis": false
+            },
+            {
+              "text": "you",
+              "startMs": 11050,
+              "endMs": 11267,
+              "emphasis": false
+            },
+            {
+              "text": "choose",
+              "startMs": 11267,
+              "endMs": 11484,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "first.",
+              "startMs": 11484,
+              "endMs": 11702,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 12022,
+      "endMs": 13309,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "Choosing",
+              "startMs": 12022,
+              "endMs": 12457,
+              "emphasis": false
+            },
+            {
+              "text": "feels",
+              "startMs": 12457,
+              "endMs": 12674,
+              "emphasis": false
+            },
+            {
+              "text": "like",
+              "startMs": 12674,
+              "endMs": 12891,
+              "emphasis": false
+            },
+            {
+              "text": "work —",
+              "startMs": 12891,
+              "endMs": 13109,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 13309,
+      "endMs": 15298,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "so",
+              "startMs": 13309,
+              "endMs": 13526,
+              "emphasis": false
+            },
+            {
+              "text": "you",
+              "startMs": 13309,
+              "endMs": 13743,
+              "emphasis": false
+            },
+            {
+              "text": "open",
+              "startMs": 13743,
+              "endMs": 14178,
+              "emphasis": false
+            },
+            {
+              "text": "email",
+              "startMs": 14178,
+              "endMs": 14613,
+              "emphasis": false
+            },
+            {
+              "text": "instead.",
+              "startMs": 14613,
+              "endMs": 15048,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 15980,
+      "endMs": 17504,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "So",
+              "startMs": 15980,
+              "endMs": 16197,
+              "emphasis": false
+            },
+            {
+              "text": "the",
+              "startMs": 15980,
+              "endMs": 16415,
+              "emphasis": false
+            },
+            {
+              "text": "app",
+              "startMs": 15980,
+              "endMs": 16632,
+              "emphasis": false
+            },
+            {
+              "text": "asks",
+              "startMs": 16632,
+              "endMs": 16850,
+              "emphasis": false
+            },
+            {
+              "text": "one",
+              "startMs": 16850,
+              "endMs": 17067,
+              "emphasis": false
+            },
+            {
+              "text": "thing:",
+              "startMs": 17067,
+              "endMs": 17284,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 17504,
+      "endMs": 18841,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "what",
+              "startMs": 17504,
+              "endMs": 17722,
+              "emphasis": false
+            },
+            {
+              "text": "is",
+              "startMs": 17722,
+              "endMs": 17939,
+              "emphasis": false
+            },
+            {
+              "text": "the",
+              "startMs": 17939,
+              "endMs": 18157,
+              "emphasis": false
+            },
+            {
+              "text": "one",
+              "startMs": 17939,
+              "endMs": 18374,
+              "emphasis": false
+            },
+            {
+              "text": "task?",
+              "startMs": 18374,
+              "endMs": 18591,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 18911,
+      "endMs": 20248,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "Then",
+              "startMs": 18911,
+              "endMs": 19129,
+              "emphasis": false
+            },
+            {
+              "text": "one",
+              "startMs": 19129,
+              "endMs": 19346,
+              "emphasis": false
+            },
+            {
+              "text": "timer",
+              "startMs": 19346,
+              "endMs": 19781,
+              "emphasis": false
+            },
+            {
+              "text": "starts.",
+              "startMs": 19781,
+              "endMs": 19998,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 20980,
+      "endMs": 22227,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "Twenty-five",
+              "startMs": 20980,
+              "endMs": 21632,
+              "emphasis": false
+            },
+            {
+              "text": "minutes,",
+              "startMs": 21632,
+              "endMs": 22067,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 22227,
+      "endMs": 22912,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "one",
+              "startMs": 22227,
+              "endMs": 22444,
+              "emphasis": false
+            },
+            {
+              "text": "task.",
+              "startMs": 22444,
+              "endMs": 22662,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 22982,
+      "endMs": 25623,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "And",
+              "startMs": 22982,
+              "endMs": 23199,
+              "emphasis": false
+            },
+            {
+              "text": "no",
+              "startMs": 22982,
+              "endMs": 23417,
+              "emphasis": false
+            },
+            {
+              "text": "streak",
+              "startMs": 22982,
+              "endMs": 23634,
+              "emphasis": false
+            },
+            {
+              "text": "to",
+              "startMs": 23634,
+              "endMs": 23851,
+              "emphasis": false
+            },
+            {
+              "text": "lose",
+              "startMs": 23634,
+              "endMs": 24069,
+              "emphasis": false
+            },
+            {
+              "text": "if",
+              "startMs": 24069,
+              "endMs": 24286,
+              "emphasis": false
+            },
+            {
+              "text": "you",
+              "startMs": 24069,
+              "endMs": 24503,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "skip",
+              "startMs": 24503,
+              "endMs": 24721,
+              "emphasis": false
+            },
+            {
+              "text": "tomorrow.",
+              "startMs": 24721,
+              "endMs": 25373,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 25780,
+      "endMs": 27769,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "It's",
+              "startMs": 25780,
+              "endMs": 25997,
+              "emphasis": false
+            },
+            {
+              "text": "in",
+              "startMs": 25997,
+              "endMs": 26215,
+              "emphasis": false
+            },
+            {
+              "text": "public",
+              "startMs": 25997,
+              "endMs": 26650,
+              "emphasis": false
+            },
+            {
+              "text": "beta",
+              "startMs": 26650,
+              "endMs": 27084,
+              "emphasis": false
+            },
+            {
+              "text": "on",
+              "startMs": 27084,
+              "endMs": 27302,
+              "emphasis": false
+            },
+            {
+              "text": "iOS.",
+              "startMs": 27084,
+              "endMs": 27519,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    },
+    {
+      "startMs": 27839,
+      "endMs": 29611,
+      "lines": [
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "Tell",
+              "startMs": 27839,
+              "endMs": 28057,
+              "emphasis": false
+            },
+            {
+              "text": "me",
+              "startMs": 28057,
+              "endMs": 28274,
+              "emphasis": false
+            },
+            {
+              "text": "what",
+              "startMs": 28274,
+              "endMs": 28491,
+              "emphasis": false
+            },
+            {
+              "text": "breaks",
+              "startMs": 28491,
+              "endMs": 28709,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "step": 0,
+          "words": [
+            {
+              "text": "your",
+              "startMs": 28709,
+              "endMs": 28926,
+              "emphasis": false
+            },
+            {
+              "text": "focus.",
+              "startMs": 28709,
+              "endMs": 29361,
+              "emphasis": false
+            }
+          ]
+        }
+      ],
+      "slot": "captionBand"
+    }
+  ]
+}

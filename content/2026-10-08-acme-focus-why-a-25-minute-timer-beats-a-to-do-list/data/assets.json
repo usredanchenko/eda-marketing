@@ -1,0 +1,227 @@
+{
+  "assets": [
+    {
+      "id": "shoot-s01",
+      "class": "SHOOT_THIS",
+      "kind": "video",
+      "path": null,
+      "status": "PLACEHOLDER",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "S01"
+      ],
+      "note": "Not filmed. Draft uses desk-vertical.mp4 as stand-in."
+    },
+    {
+      "id": "shoot-s02",
+      "class": "SHOOT_THIS",
+      "kind": "video",
+      "path": null,
+      "status": "PLACEHOLDER",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "S02"
+      ],
+      "note": "Not filmed. Draft uses a placeholder scene."
+    },
+    {
+      "id": "shoot-s03",
+      "class": "SHOOT_THIS",
+      "kind": "video",
+      "path": null,
+      "status": "PLACEHOLDER",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "S03"
+      ],
+      "note": "Not filmed. Draft uses desk-vertical.mp4 as stand-in."
+    },
+    {
+      "id": "shoot-s04",
+      "class": "SHOOT_THIS",
+      "kind": "video",
+      "path": null,
+      "status": "MISSING",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "S04"
+      ],
+      "note": "Optional safety take; not used in the draft."
+    },
+    {
+      "id": "shoot-s05",
+      "class": "SHOOT_THIS",
+      "kind": "video",
+      "path": null,
+      "status": "PLACEHOLDER",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "S05"
+      ],
+      "note": "Not filmed. Draft uses desk-vertical.mp4 as stand-in."
+    },
+    {
+      "id": "example-desk-vertical",
+      "class": "EXISTING_ASSET",
+      "kind": "video",
+      "path": "assets/acme-focus/footage/desk-vertical.mp4",
+      "status": "READY",
+      "provenanceId": "example-desk-vertical",
+      "restriction": "fictional example brand",
+      "usedBy": [
+        "S01",
+        "S03",
+        "S05"
+      ],
+      "note": "Synthesized abstract gradient, 12 s; stand-in only, never the final shot."
+    },
+    {
+      "id": "example-blockout",
+      "class": "EXISTING_ASSET",
+      "kind": "image",
+      "path": "assets/acme-focus/preview/blockout.png",
+      "status": "READY",
+      "provenanceId": "example-blockout",
+      "restriction": "fictional example brand",
+      "usedBy": [
+        "E01"
+      ],
+      "note": "16:9 example blockout; cover-cropped in 9:16."
+    },
+    {
+      "id": "example-task",
+      "class": "EXISTING_ASSET",
+      "kind": "image",
+      "path": "assets/acme-focus/screens/task.png",
+      "status": "READY",
+      "provenanceId": "example-task",
+      "restriction": "fictional example brand",
+      "usedBy": [
+        "E02"
+      ],
+      "note": "Example UI, fictional app."
+    },
+    {
+      "id": "example-timer",
+      "class": "EXISTING_ASSET",
+      "kind": "image",
+      "path": "assets/acme-focus/screens/timer.png",
+      "status": "READY",
+      "provenanceId": "example-timer",
+      "restriction": "fictional example brand",
+      "usedBy": [
+        "E02"
+      ],
+      "note": "Example UI, fictional app."
+    },
+    {
+      "id": "example-done",
+      "class": "EXISTING_ASSET",
+      "kind": "image",
+      "path": "assets/acme-focus/screens/done.png",
+      "status": "READY",
+      "provenanceId": "example-done",
+      "restriction": "fictional example brand",
+      "usedBy": [
+        "E03"
+      ],
+      "note": "Example UI, fictional app."
+    },
+    {
+      "id": "sfx-ui-notify",
+      "class": "EXISTING_ASSET",
+      "kind": "audio",
+      "path": "assets/shared/sfx/ui-notify.wav",
+      "status": "READY",
+      "provenanceId": "sfx-ui-notify",
+      "restriction": null,
+      "usedBy": [
+        "G01"
+      ],
+      "note": "Synthesized locally."
+    },
+    {
+      "id": "sfx-ui-pop",
+      "class": "EXISTING_ASSET",
+      "kind": "audio",
+      "path": "assets/shared/sfx/ui-pop.wav",
+      "status": "READY",
+      "provenanceId": "sfx-ui-pop",
+      "restriction": null,
+      "usedBy": [
+        "E02"
+      ],
+      "note": "Synthesized locally."
+    },
+    {
+      "id": "sfx-whoosh-soft",
+      "class": "EXISTING_ASSET",
+      "kind": "audio",
+      "path": "assets/shared/sfx/whoosh-soft.wav",
+      "status": "READY",
+      "provenanceId": "sfx-whoosh-soft",
+      "restriction": null,
+      "usedBy": [
+        "G04"
+      ],
+      "note": "Synthesized locally."
+    },
+    {
+      "id": "gen-card",
+      "class": "GENERATE_THIS",
+      "kind": "motion",
+      "path": null,
+      "status": "READY",
+      "provenanceId": null,
+      "restriction": "illustration, labeled",
+      "usedBy": [
+        "G01"
+      ],
+      "note": "Built from props (card scene); no HyperFrames segment."
+    },
+    {
+      "id": "gen-progress",
+      "class": "GENERATE_THIS",
+      "kind": "motion",
+      "path": null,
+      "status": "READY",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "G02"
+      ],
+      "note": "Built from props (progress scene)."
+    },
+    {
+      "id": "gen-cta",
+      "class": "GENERATE_THIS",
+      "kind": "motion",
+      "path": null,
+      "status": "READY",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "G03"
+      ],
+      "note": "Built from props (cta scene)."
+    },
+    {
+      "id": "gen-title",
+      "class": "GENERATE_THIS",
+      "kind": "motion",
+      "path": null,
+      "status": "READY",
+      "provenanceId": null,
+      "restriction": null,
+      "usedBy": [
+        "G04"
+      ],
+      "note": "Built from props (title scene)."
+    }
+  ]
+}

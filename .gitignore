@@ -1,0 +1,59 @@
+# Dependencies and builds
+node_modules/
+dist/
+.remotion/
+video/remotion/src/generated/
+video/remotion/out/
+*.tsbuildinfo
+
+# Secrets — keys live only in .env (see .env.example)
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+
+# Raw footage and caches: never committed, never modified by the system
+input/*
+!input/.gitkeep
+!input/README.md
+cache/*
+!cache/.gitkeep
+
+# Heavy media stays out of git; list your own sources in assets/sources.json and run `npm run mos -- assets restore`
+assets/**/*.mp4
+assets/**/*.mov
+assets/**/*.webm
+assets/**/*.wav
+assets/**/*.m4a
+assets/**/*.mp3
+
+# Per-package renders and heavy QA output
+content/*/renders/
+content/*/qa/*.jpg
+content/*/qa/*.png
+content/*/video/motion/*/renders/
+content/*/video/motion/*/.thumbnails/
+content/*/video/motion/*/.hyperframes/
+content/*/video/audio/*.wav
+content/*/video/footage/proxies/
+video/hyperframes/templates/*/.hyperframes/
+video/hyperframes/templates/*/.thumbnails/
+video/hyperframes/templates/*/renders/
+
+# Python / tooling
+.venv*/
+__pycache__/
+*.log
+.DS_Store
+
+# Generated: example-brand media (npm run mos -- assets examples), HyperFrames token CSS, local provenance
+assets/acme-focus/
+video/hyperframes/templates/_shared/tokens-*.css
+assets/PROVENANCE.jsonl
+
+# Third-party skills are never vendored (see THIRD_PARTY_SKILLS.md)
+.claude/skills/*
+!.claude/skills/eda-marketing
+memory/index.jsonl

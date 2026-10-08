@@ -1,0 +1,27 @@
+# Modes of /eda-marketing:marketing video. Each mode includes the previous one.
+modes:
+  quick:
+    goal: "A script, fast"
+    questions: "≤3 critical"
+    stages: [brief, hooks, script]
+    review: "self-critique + agent:brand-guard"
+    ideas: "3 ideas without full scoring"
+    stop_after: script
+  standard:
+    goal: "Research + script + shot list + captions + publish copy"
+    stages: [brief, research, ideas, hooks, script, review, shotlist, captions, publish-copy, summary]
+    stop_after: summary
+  production:
+    goal: "Full cycle including edit and draft render"
+    stages: [brief, research, ideas, hooks, script, review, shotlist, captions, publish-copy, summary, assets, edit, motion, sound, qa, draft]
+    requires_gate_before: { assets: productionApproved }
+    stop_after: draft
+  deep:
+    goal: "Research + references + variants + production + review"
+    stages: [brief, research, references, ideas, hooks, script, script-variants, review, shotlist, captions, publish-copy, summary, assets, edit, motion, sound, qa, draft, review-after-draft]
+    extra:
+      references: "agent:reference-analyst on 2–5 references (research/references, reference add)"
+      script-variants: "2–3 scripts with different hook types, compared in SCRIPT_REVIEW.md"
+      review-after-draft: "retention-editor + video-qa on the draft, fixes, another draft"
+    requires_gate_before: { assets: productionApproved, final: finalRender }
+    stop_after: draft

@@ -1,0 +1,11 @@
+# Experiments: one A/B comparison per entry. Validate with `npm run mos -- analytics experiments`.
+# Fields (all required):
+#   experiment: snake_case id
+#   brand: <brand-id> (or "both", per the current schema)
+#   status: planned | running | concluded | abandoned
+#   hypothesis, variant_a, variant_b, primary_metric: strings
+#   minimum_sample: positive integer (videos per variant before drawing a conclusion)
+#   videos: { a: [<package-id>…], b: [<package-id>…] }
+#   result, learning: string or null
+#   confidence: none | insufficient | low | medium | high | null
+experiments: []

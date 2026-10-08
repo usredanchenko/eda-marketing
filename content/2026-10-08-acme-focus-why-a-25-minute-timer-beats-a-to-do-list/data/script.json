@@ -1,0 +1,152 @@
+{
+  "language": "en",
+  "hookId": "h01",
+  "targetDurationSec": [
+    25,
+    30
+  ],
+  "timingSource": "estimated",
+  "blocks": [
+    {
+      "id": "b01",
+      "startSec": 0,
+      "endSec": 4.5,
+      "role": "hook",
+      "visual": "S01 Alex at the desk, to camera; lower third 'Alex · solo developer of Acme Focus' (draft: stand-in footage).",
+      "speech": "Every morning my to-do list got longer. And I started nothing.",
+      "onScreenText": "Lower third: Alex · solo developer of Acme Focus. Accent: And I started nothing.",
+      "sound": "—",
+      "motion": "—",
+      "shotIds": [
+        "S01"
+      ],
+      "retention": {
+        "whyKeepWatching": "Confession: the viewer recognises the pain.",
+        "risk": "low"
+      }
+    },
+    {
+      "id": "b02",
+      "startSec": 4.5,
+      "endSec": 10.1,
+      "role": "setup",
+      "visual": "E01 blockout of the next screen (labeled), then S02 Alex to camera with the beta progress bar.",
+      "speech": "I'm Alex, building a focus timer on my own. Three of five beta features shipped.",
+      "onScreenText": "Honesty label: BLOCKOUT · NOT THE REAL PRODUCT. Progress bar: BETA MILESTONE (3/5).",
+      "sound": "—",
+      "motion": "Progress bar fills to 3/5.",
+      "shotIds": [
+        "E01",
+        "S02",
+        "G02"
+      ],
+      "retention": {
+        "whyKeepWatching": "Who is talking and that this is a real build, not an ad.",
+        "risk": "medium"
+      }
+    },
+    {
+      "id": "b03",
+      "startSec": 10.1,
+      "endSec": 15.9,
+      "role": "development",
+      "visual": "S03 Alex reaches for the laptop; G01 notification card (illustration) lands over it.",
+      "speech": "A long list makes you choose first. Choosing feels like work — so you open email instead.",
+      "onScreenText": "Card: ILLUSTRATION · INBOX — Quick question (5 min?)",
+      "sound": "ui-notify when the card lands.",
+      "motion": "Card enters with a short ease-out; status stamps NEW → OPENED.",
+      "shotIds": [
+        "S03",
+        "G01"
+      ],
+      "retention": {
+        "whyKeepWatching": "The why: the contrast between choosing and doing.",
+        "risk": "medium"
+      }
+    },
+    {
+      "id": "b04",
+      "startSec": 15.9,
+      "endSec": 20.9,
+      "role": "turn",
+      "visual": "E02 phone: start screen 'What is the one task?' → cut to the running timer.",
+      "speech": "So the app asks one thing: what is the one task? Then one timer starts.",
+      "onScreenText": "Screen labels: EXAMPLE UI · FICTIONAL APP",
+      "sound": "ui-pop on the cut to the running timer.",
+      "motion": "Hard cut inside the phone frame.",
+      "shotIds": [
+        "E02"
+      ],
+      "retention": {
+        "whyKeepWatching": "The product answers the problem from b03.",
+        "risk": "low"
+      }
+    },
+    {
+      "id": "b05",
+      "startSec": 20.9,
+      "endSec": 25.7,
+      "role": "payoff",
+      "visual": "G04 title card '25 minutes / one task' (S04 optional cover), then E03 done screen.",
+      "speech": "Twenty-five minutes, one task. And no streak to lose if you skip tomorrow.",
+      "onScreenText": "Title: 25 minutes / one task",
+      "sound": "whoosh-soft on the title.",
+      "motion": "Title wipe in coral.",
+      "shotIds": [
+        "S04",
+        "E03"
+      ],
+      "retention": {
+        "whyKeepWatching": "The punchline: the rule is small enough to start.",
+        "risk": "low"
+      }
+    },
+    {
+      "id": "b06",
+      "startSec": 25.7,
+      "endSec": 30.0,
+      "role": "cta",
+      "visual": "S05 Alex to camera, then G03 CTA card.",
+      "speech": "It's in public beta on iOS. Tell me what breaks your focus.",
+      "onScreenText": "CTA (editorial): Link in bio · ACME FOCUS",
+      "sound": "—",
+      "motion": "CTA card fades in.",
+      "shotIds": [
+        "S05",
+        "G03"
+      ],
+      "retention": {
+        "whyKeepWatching": "A question to answer in the comments.",
+        "risk": "medium"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "text": "Three of five beta features shipped.",
+      "factId": "acme-focus-beta-progress",
+      "status": "PUBLIC_CONFIRMED"
+    },
+    {
+      "text": "The app asks one thing: what is the one task? Then one timer starts.",
+      "factId": "acme-focus-what-it-is",
+      "status": "PUBLIC_CONFIRMED"
+    },
+    {
+      "text": "No streak to lose if you skip tomorrow.",
+      "factId": "acme-focus-no-streaks",
+      "status": "PUBLIC_CONFIRMED"
+    },
+    {
+      "text": "It's in public beta on iOS.",
+      "factId": "acme-focus-ios-beta",
+      "status": "PUBLIC_CONFIRMED"
+    }
+  ],
+  "editorialCta": "Link in bio",
+  "notes": [
+    "Fictional example package: speech is a written script for Alex; nothing is recorded yet. Timing is estimated from brand.json syllablesPerSec (not calibrated).",
+    "'Twenty-five minutes' is the pomodoro-style technique Alex describes, not a claim about the app's default timer length; facts.yaml has no fact for a default duration, so the edit never labels it as a product setting.",
+    "The email/notification card is an illustration and is labeled on screen."
+  ]
+}

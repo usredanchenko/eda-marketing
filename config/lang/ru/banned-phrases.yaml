@@ -1,0 +1,32 @@
+# Anti-slop for Russian copy: phrases that turn text into an "ad announcer" voice or an AI template.
+# Loaded for brands with brand.json → language: ru.
+# severity: error — blocks `script check`; warn — allowed only with an explicit reason in SCRIPT_REVIEW.md.
+# pattern — case-insensitive regular expression (JS, flags "giu").
+# A few English anglicisms are kept because they show up in Russian marketing copy too.
+rules:
+  - { id: modern-world, pattern: "в современном мире", severity: error }
+  - { id: imagine, pattern: "представьте( себе)?", severity: warn }
+  - { id: ever-wondered, pattern: "вы когда-нибудь задумывались", severity: warn }
+  - { id: revolutionary-ru, pattern: "революционн\\w*", severity: error }
+  - { id: unique-experience, pattern: "уникальн\\w* (опыт|возможност)", severity: error }
+  - { id: immerse, pattern: "погрузитесь|окунитесь", severity: error }
+  - { id: changes-everything, pattern: "изменит вс[её]", severity: error }
+  - { id: future-is-here, pattern: "будущее уже (наступило|здесь)", severity: error }
+  - { id: next-gen-ru, pattern: "нового поколения", severity: error }
+  - { id: innovative, pattern: "инновационн\\w*", severity: error }
+  - { id: seamless-ru, pattern: "бесшовн\\w*", severity: error }
+  - { id: cutting-edge-ru, pattern: "передов\\w* технолог", severity: error }
+  - { id: discover, pattern: "откройте для себя", severity: error }
+  - { id: dont-miss, pattern: "не пропустите", severity: warn }
+  - { id: happy-to-present, pattern: "(мы )?рады (представить|сообщить)", severity: error }
+  - { id: best-in-world, pattern: "лучш\\w* в мире", severity: error }
+  - { id: game-changer-ru, pattern: "меняет правила игры", severity: error }
+  - { id: cinematic, pattern: "\\bcinematic\\b|кинематографичн\\w*", severity: warn }
+  - { id: revolutionary-en, pattern: "\\brevolutionary\\b", severity: error }
+  - { id: game-changing, pattern: "\\bgame[- ]chang\\w*", severity: error }
+  - { id: cutting-edge, pattern: "\\bcutting[- ]edge\\b", severity: error }
+  - { id: unlock, pattern: "\\bunlock\\w*", severity: warn }
+  - { id: seamless, pattern: "\\bseamless\\w*", severity: error }
+  - { id: next-generation, pattern: "\\bnext[- ]gen\\w*", severity: error }
+  - { id: subscribe-beg, pattern: "подпишись,? (чтобы|если) не", severity: warn }
+  - { id: algorithm-claim, pattern: "алгоритм\\w* (продвига|любит|награжда|наказыва)", severity: error }

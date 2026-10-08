@@ -1,0 +1,21 @@
+{
+  "name": "@mos/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "`mos` CLI: packages, briefs, assets, captions, video register/render, QA, analytics, memory.",
+  "bin": {
+    "mos": "./src/cli.ts"
+  },
+  "dependencies": {
+    "@mos/core": "*",
+    "commander": "15.0.0",
+    "fontkit": "2.0.4",
+    "yaml": "2.9.1",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/fontkit": "2.0.9"
+  },
+  "license": "MIT"
+}

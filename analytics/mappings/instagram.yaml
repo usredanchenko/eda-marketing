@@ -1,0 +1,25 @@
+# Instagram: Reels stats export depends on the tool (Meta Business Suite, Professional dashboard).
+# Data is often copied from screenshots instead (analytics add). Check the columns against a real file and set verified: true.
+# Column aliases include Russian-locale export headers; they are data, keep them.
+id: instagram-insights
+platform: instagram
+verified: false
+columns:
+  video_id: ["Post ID", "Permalink", "ID публикации", "Ссылка"]
+  date: ["Publish time", "Время публикации"]
+  topic: ["Description", "Описание"]
+  duration: ["Duration (sec)", "Длительность (сек)"]
+  views: ["Views", "Plays", "Просмотры", "Воспроизведения"]
+  reach: ["Reach", "Охват"]
+  likes: ["Likes", "Отметки «Нравится»"]
+  comments: ["Comments", "Комментарии"]
+  shares: ["Shares", "Репосты"]
+  saves: ["Saves", "Сохранения"]
+  followers_gained: ["Follows", "Подписки"]
+  profile_visits: ["Profile visits", "Посещения профиля"]
+  average_watch_time: ["Average watch time", "Среднее время просмотра"]
+  watch_time: ["Watch time", "Время просмотра"]
+transforms:
+  average_watch_time: duration
+  watch_time: duration
+  duration: duration

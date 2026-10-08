@@ -1,0 +1,42 @@
+{
+  "verified": false,
+  "note": "Safe areas are approximate fractions of the frame covered by platform UI (top/bottom/left/right). Not verified against real UI screenshots: before the final render, compare with current TikTok/Reels/Shorts screenshots and set verified:true. Caption limits come from platform help pages; verify them too.",
+  "platforms": {
+    "tiktok": {
+      "label": "TikTok",
+      "verified": false,
+      "source": "estimate from the typical UI layout (buttons on the right, caption and music at the bottom)",
+      "captionMaxChars": 4000,
+      "margins": {
+        "9x16": { "top": 0.08, "bottom": 0.2, "left": 0.04, "right": 0.13 },
+        "1x1": { "top": 0.04, "bottom": 0.04, "left": 0.04, "right": 0.04 },
+        "4x5": { "top": 0.04, "bottom": 0.04, "left": 0.04, "right": 0.04 },
+        "16x9": { "top": 0.05, "bottom": 0.05, "left": 0.05, "right": 0.05 }
+      }
+    },
+    "instagram": {
+      "label": "Instagram Reels",
+      "verified": false,
+      "source": "estimate from the typical Reels UI layout",
+      "captionMaxChars": 2200,
+      "margins": {
+        "9x16": { "top": 0.07, "bottom": 0.18, "left": 0.04, "right": 0.12 },
+        "1x1": { "top": 0.04, "bottom": 0.04, "left": 0.04, "right": 0.04 },
+        "4x5": { "top": 0.04, "bottom": 0.06, "left": 0.04, "right": 0.04 },
+        "16x9": { "top": 0.05, "bottom": 0.05, "left": 0.05, "right": 0.05 }
+      }
+    },
+    "youtube": {
+      "label": "YouTube Shorts",
+      "verified": false,
+      "source": "estimate from the typical Shorts UI layout; title up to 100 characters, description up to 5000",
+      "captionMaxChars": 5000,
+      "margins": {
+        "9x16": { "top": 0.07, "bottom": 0.21, "left": 0.04, "right": 0.14 },
+        "1x1": { "top": 0.04, "bottom": 0.04, "left": 0.04, "right": 0.04 },
+        "4x5": { "top": 0.04, "bottom": 0.04, "left": 0.04, "right": 0.04 },
+        "16x9": { "top": 0.05, "bottom": 0.08, "left": 0.05, "right": 0.05 }
+      }
+    }
+  }
+}

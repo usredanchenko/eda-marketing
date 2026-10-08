@@ -1,0 +1,27 @@
+# TikTok Studio → Analytics → Content → Export (CSV). Column names change over time — check against a real file
+# (npm run mos -- analytics import file.csv --platform tiktok --brand <brand-id> --dry-run) and set verified: true.
+# Column aliases include Russian-locale export headers; they are data, keep them.
+id: tiktok-studio-content
+platform: tiktok
+verified: false
+columns:
+  video_id: ["Video ID", "Post ID", "ID видео", "Video link", "Ссылка на видео"]
+  date: ["Post time", "Date posted", "Posted on", "Дата публикации", "Время публикации"]
+  topic: ["Video title", "Caption", "Title", "Описание", "Название"]
+  duration: ["Duration", "Video duration", "Длительность"]
+  views: ["Video views", "Views", "Просмотры видео", "Просмотры"]
+  reach: ["Reach", "Reached audience", "Охват"]
+  likes: ["Likes", "Отметки «Нравится»", "Лайки"]
+  comments: ["Comments", "Комментарии"]
+  shares: ["Shares", "Репосты", "Поделились"]
+  saves: ["Favorites", "Saves", "Избранное", "Сохранения"]
+  followers_gained: ["New followers", "Новые подписчики"]
+  profile_visits: ["Profile views", "Просмотры профиля"]
+  watch_time: ["Total play time", "Total watch time", "Общее время просмотра"]
+  average_watch_time: ["Average watch time", "Среднее время просмотра"]
+  completion_rate: ["Watched full video", "Full video watched rate", "Досмотрели до конца"]
+transforms:
+  completion_rate: percent
+  average_watch_time: duration
+  watch_time: duration
+  duration: duration

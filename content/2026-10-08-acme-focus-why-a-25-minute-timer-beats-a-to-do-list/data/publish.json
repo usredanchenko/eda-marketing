@@ -1,0 +1,71 @@
+{
+  "platforms": [
+    {
+      "platform": "tiktok",
+      "title": "Why one timer beats my to-do list",
+      "caption": "My list kept growing and I started nothing. So the app asks one question: what is the one task? Tell me what breaks your focus.",
+      "description": "",
+      "cta": "Tell me what breaks your focus",
+      "hashtags": [
+        "#buildinpublic",
+        "#focus",
+        "#indiedev",
+        "#pomodoro"
+      ],
+      "keywords": [
+        "focus timer",
+        "to-do list",
+        "pomodoro",
+        "solo developer",
+        "build in public"
+      ],
+      "onScreenTitle": "One timer, one task",
+      "coverText": "My to-do list won. Then I tried this"
+    },
+    {
+      "platform": "instagram",
+      "title": "Why one timer beats my to-do list",
+      "caption": "My to-do list got longer every morning, and I started nothing. A long list makes you choose first. So I'm building a timer that asks for one task. Public beta on iOS — link in bio. What breaks your focus?",
+      "description": "",
+      "cta": "Tell me what breaks your focus",
+      "hashtags": [
+        "#buildinpublic",
+        "#focus",
+        "#indiedev",
+        "#pomodoro",
+        "#iosapp"
+      ],
+      "keywords": [
+        "focus timer",
+        "to-do list",
+        "pomodoro",
+        "indie app"
+      ],
+      "onScreenTitle": "One timer, one task",
+      "coverText": "My to-do list won. Then I tried this"
+    },
+    {
+      "platform": "youtube",
+      "title": "Why one 25-minute timer beats a to-do list #shorts",
+      "caption": "One task, one timer, no streaks. Dev diary from the solo developer of Acme Focus.",
+      "description": "I'm Alex, building Acme Focus on my own: one timer, one task. A long to-do list makes you choose before you start, so the app asks for just one task. No streaks to lose if you skip a day. Public beta on iOS. Fictional example video from the eda-marketing repo.",
+      "cta": "Tell me what breaks your focus",
+      "hashtags": [
+        "#buildinpublic",
+        "#focus",
+        "#indiedev",
+        "#shorts"
+      ],
+      "keywords": [
+        "focus timer",
+        "to-do list",
+        "pomodoro",
+        "dev diary",
+        "solo developer"
+      ],
+      "onScreenTitle": "One timer, one task",
+      "coverText": "My to-do list won. Then I tried this"
+    }
+  ],
+  "needsConfirmation": []
+}

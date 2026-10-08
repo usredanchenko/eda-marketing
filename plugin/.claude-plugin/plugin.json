@@ -1,0 +1,11 @@
+{
+  "name": "eda-marketing",
+  "displayName": "eda-marketing",
+  "version": "0.1.0",
+  "description": "Short-form video marketing OS for Claude Code: research, ideas, hooks, scripts, shot lists, Remotion montage, HyperFrames motion, captions (EN/RU), publish copy, QA and analytics — with brand-safe facts and approval gates.",
+  "author": { "name": "Egor", "url": "https://github.com/usredanchenko" },
+  "homepage": "https://github.com/usredanchenko/eda-marketing",
+  "repository": "https://github.com/usredanchenko/eda-marketing",
+  "license": "MIT",
+  "keywords": ["marketing", "short-form video", "tiktok", "reels", "youtube-shorts", "remotion", "hyperframes", "captions", "content", "video"]
+}

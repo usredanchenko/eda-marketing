@@ -1,0 +1,22 @@
+# Stages of a video package. by: skill (inline) | agent (subagent, read-only) | mos (engine command) | user (decision).
+# gate: what must be recorded (`npm run mos -- approve <pkg> <gate> --quote "…"`) before moving on.
+stages:
+  brief:        { by: "skill:marketing", outputs: [BRIEF.md], gate: brief, note: "unknowns only, in one block; QUICK ≤3 questions" }
+  research:     { by: "skill:trend-scout + agent:researcher", outputs: [RESEARCH.md, "research/trends/*"], note: "7-day cache; FACT/OBSERVATION/HYPOTHESIS" }
+  ideas:        { by: "skill:idea-generator + mos:ideas", outputs: [data/ideas.json, IDEAS.md], gate: ideaSelected, note: "≥10 ideas × 9 criteria, top 3" }
+  hooks:        { by: "skill:hook-lab", outputs: [data/hooks.json, HOOKS.md], gate: hooksSelected, note: "≥5 types, VOICE/VISUAL/TEXT, payoff" }
+  script:       { by: "skill:script-writer + mos:script", outputs: [data/script.json, SCRIPT.md] }
+  review:       { by: "agent:script-critic + agent:retention-editor + agent:brand-guard (in parallel)", outputs: [SCRIPT_REVIEW.md], gate: scriptApproved }
+  shotlist:     { by: "skill:shot-planner", outputs: [data/shotlist.json, data/assets.json, SHOTLIST.md, ASSETS.md] }
+  captions:     { by: "skill:caption-writer + mos:captions build", outputs: [video/captions/*, video/captions/speech.srt] }
+  publish-copy: { by: "skill:content-repurposer", outputs: [data/publish.json, "captions/*.md", PUBLISH.md] }
+  summary:      { by: "skill:marketing", outputs: ["reply: IDEA/HOOK/SHOT LIST/SCRIPT/EDIT/MOTION/CAPTION/CTA"], gate: productionApproved, note: "STOP until the user replies" }
+  assets:       { by: "skill:footage-ingest + mos:footage", outputs: [video/footage/index.json, "EDIT_PLAN.md#rough-cut"] }
+  edit:         { by: "skill:editor", outputs: [EDIT_PLAN.md, video/props.json, video/timeline-manifest.json] }
+  motion:       { by: "skill:motion-designer + mos:motion", outputs: [MOTION_BRIEF.md, "video/motion/<seg>/"], gate: "motion:<seg>" }
+  sound:        { by: "skill:editor", outputs: [SOUND_PLAN.md, "props.audio"] }
+  qa:           { by: "mos:qa + agent:video-qa", outputs: [qa/qa-report.json, qa/contact-sheet.jpg, QA.md] }
+  draft:        { by: "mos:video render", outputs: [renders/draft.mp4] }
+  final:        { by: "mos:video render --final", outputs: [renders/final.mp4], gate: finalRender, note: "real speech, transcribed captions, draft off" }
+  published:    { by: user, outputs: ["manifest.published (mos published)"], gate: publish, note: "the system never publishes" }
+  analytics:    { by: "mos:analytics import + skill:analytics-review", outputs: [analytics/records.jsonl, "analytics/reports/*", analytics/learnings/LEARNINGS.md] }

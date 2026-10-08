@@ -1,0 +1,11 @@
+# Every product claim in scripts, on screen and in post copy must point to a fact id below.
+# Status: PUBLIC_CONFIRMED (may be published, no stronger than publicWording) | INTERNAL (planning only)
+#         NEEDS_CONFIRMATION (never published) | FORBIDDEN (never).
+brand: __BRAND_ID__
+updated: "__TODAY__"
+facts:
+  - id: __BRAND_ID__-what-it-is
+    statement: "What the product is, in one sentence."
+    status: NEEDS_CONFIRMATION
+    source: "to be provided by the brand owner"
+    checked: "__TODAY__"

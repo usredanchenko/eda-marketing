@@ -1,0 +1,122 @@
+<!doctype html>
+<html
+  lang="en"
+  data-composition-variables='[
+    {"id":"ref","type":"string","label":"Reference","default":"#4127"},
+    {"id":"title","type":"string","label":"Title","default":"Quick question (5 min?)"},
+    {"id":"requester","type":"string","label":"From","default":"Your own brain"},
+    {"id":"location","type":"string","label":"When","default":"Right now"},
+    {"id":"repeats","type":"string","label":"Repeat chip (empty hides it)","default":"3rd time today"},
+    {"id":"comment","type":"string","label":"Typed reply","default":"Did you try closing the tab?"},
+    {"id":"repeatAt","type":"number","label":"Second of the AGAIN stamp","default":2.0,"min":1.2,"max":5.4,"step":0.05,"unit":"s"},
+    {"id":"commentAt","type":"number","label":"Second the reply starts typing","default":2.55,"min":1.4,"max":5.6,"step":0.05,"unit":"s"},
+    {"id":"label","type":"string","label":"Honesty label","default":"ILLUSTRATION · NOT A REAL APP SCREEN"},
+    {"id":"header","type":"string","label":"System line","default":"Inbox · incoming"},
+    {"id":"source","type":"string","label":"Card header","default":"Notifications"},
+    {"id":"priority","type":"string","label":"Priority chip","default":"Priority: urgent"},
+    {"id":"newLabel","type":"string","label":"First stamp","default":"NEW"},
+    {"id":"againLabel","type":"string","label":"Second stamp","default":"AGAIN"}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Notification card</title>
+    <script src="gsap.min.js"></script>
+    <style>
+      /*MOS:TOKENS*/
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: transparent; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: var(--font-sans); color: var(--c-text); }
+      .stage { position: absolute; inset: 0; }
+      .scan { position: absolute; left: 0; top: 250px; width: 100%; height: 3px; background: var(--c-accent); opacity: 0; }
+      .sys { position: absolute; left: 100px; top: 206px; font-family: var(--font-mono); font-weight: 500; font-size: 24px; letter-spacing: 4px; text-transform: uppercase; color: var(--c-accent); }
+      .sys span { opacity: 0; }
+      .card { position: absolute; left: 100px; top: 290px; width: 820px; background: var(--c-surface); border: 2px solid var(--c-line); border-radius: var(--r-card); box-shadow: 0 34px 90px rgba(0, 0, 0, 0.55); }
+      .head { display: flex; justify-content: space-between; padding: 20px 28px; border-bottom: 2px solid var(--c-line); font-family: var(--font-mono); font-weight: 500; font-size: 24px; letter-spacing: 2px; color: var(--c-muted); }
+      .num { color: var(--c-accent); }
+      .body { padding: 28px 28px 34px; }
+      .title { font-weight: 700; font-size: 66px; line-height: 1.04; letter-spacing: -2px; margin: 0 0 24px; }
+      .row { font-family: var(--font-mono); font-size: 32px; line-height: 1.35; color: var(--c-muted); }
+      .row b { font-weight: 400; color: var(--c-text); }
+      .chips { display: flex; gap: 16px; margin-top: 22px; }
+      .chip { font-family: var(--font-mono); font-weight: 500; font-size: 22px; letter-spacing: 2px; padding: 8px 14px; border-radius: var(--r-chip); color: var(--c-card-ink); }
+      .chip.crit { background: var(--c-status-warn); }
+      .chip.rep { background: var(--c-accent); }
+      .foot { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 26px; padding-top: 20px; border-top: 2px dashed var(--c-line); min-height: 96px; }
+      .comment { flex: 1; font-family: var(--font-mono); font-size: 30px; color: var(--c-status-info); }
+      .stamps { position: relative; width: 280px; height: 84px; flex: none; }
+      .comment .ch { opacity: 0; }
+      .cursor { display: inline-block; width: 16px; height: 34px; margin-left: 4px; background: var(--c-status-info); vertical-align: -6px; opacity: 0; }
+      .stamp { position: absolute; right: 0; top: 8px; font-family: var(--font-mono); font-weight: 500; font-size: 40px; letter-spacing: 5px; padding: 10px 18px; border: 5px solid; opacity: 0; }
+      .stamp.new { color: var(--c-status-info); border-color: var(--c-status-info); }
+      .stamp.rep { color: var(--c-status-warn); border-color: var(--c-status-warn); }
+      .honesty { margin-top: 14px; font-family: var(--font-mono); font-size: 20px; letter-spacing: 2px; color: var(--c-muted); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="notification-card" data-start="0" data-width="1080" data-height="1920" data-duration="6.4">
+      <div id="stage" class="stage clip" data-start="0" data-duration="6.4" data-track-index="0">
+        <div id="scan" class="scan"></div>
+        <div id="sys" class="sys" data-var-text="header">Inbox · incoming</div>
+        <div id="card" class="card">
+          <div class="head"><span data-var-text="source">Notifications</span><span class="num" data-var-text="ref">#4127</span></div>
+          <div class="body">
+            <h1 id="title" class="title" data-var-text="title">Quick question (5 min?)</h1>
+            <div class="row">From: <b data-var-text="requester">Your own brain</b></div>
+            <div class="row">When: <b data-var-text="location">Right now</b></div>
+            <div class="chips">
+              <span id="crit" class="chip crit" data-var-text="priority">Priority: urgent</span>
+              <span id="rep" class="chip rep" data-var-text="repeats">3rd time today</span>
+            </div>
+            <div class="foot">
+              <div id="comment" class="comment"><span id="comment-text"></span><span id="cursor" class="cursor"></span></div>
+              <div class="stamps">
+                <div id="stamp-new" class="stamp new" data-var-text="newLabel">NEW</div>
+                <div id="stamp-rep" class="stamp rep" data-var-text="againLabel">AGAIN</div>
+              </div>
+            </div>
+            <div id="honesty" class="honesty" data-var-text="label">ILLUSTRATION · NOT A REAL APP SCREEN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const vars = window.__hyperframes ? window.__hyperframes.getVariables() : {};
+      const sys = document.getElementById("sys");
+      sys.innerHTML = [...sys.textContent].map((ch) => `<span>${ch === " " ? "&nbsp;" : ch}</span>`).join("");
+      const comment = document.getElementById("comment-text");
+      comment.innerHTML = [...(vars.comment || "Did you try closing the tab?")].map((ch) => `<span class="ch">${ch === " " ? "&nbsp;" : ch}</span>`).join("");
+
+      if (!String(vars.repeats ?? "x").trim()) document.getElementById("rep").style.display = "none";
+      const repeatAt = Number(vars.repeatAt ?? 2.0);
+      const commentAt = Math.max(Number(vars.commentAt ?? 2.55), repeatAt + 0.3);
+      const typingEnd = commentAt + 0.1 + [...(vars.comment || "")].length * 0.03;
+      const tl = gsap.timeline({ paused: true });
+      // System alert: scan line + header types in like a terminal.
+      tl.fromTo("#scan", { opacity: 0, scaleX: 0, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "expo.out" }, 0);
+      tl.to("#scan", { opacity: 0, duration: 0.25, ease: "power2.in" }, 0.55);
+      tl.to("#sys span", { opacity: 1, duration: 0.01, stagger: 0.022, ease: "steps(1)" }, 0.05);
+      // Honesty label sits under the card for the whole segment (an illustration, not a real app screen).
+      tl.fromTo("#honesty", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 0.5);
+      tl.to("#honesty", { opacity: 0, duration: 0.25, ease: "power2.in" }, 6.0);
+      // The card drops in from the top — serious UI, trivial problem.
+      tl.fromTo("#card", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+      tl.fromTo("#stamp-new", { scale: 1.7, rotation: -8, opacity: 0 }, { scale: 1, rotation: -8, opacity: 1, duration: 0.22, ease: "back.out(1.7)" }, 0.95);
+      tl.fromTo("#crit", { opacity: 0 }, { opacity: 1, duration: 0.06, ease: "steps(1)", repeat: 4, yoyo: true }, 1.1);
+      // The joke: it is the same thing again.
+      tl.fromTo("#rep", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, repeatAt - 0.45);
+      tl.to("#stamp-new", { opacity: 0, duration: 0.08 }, repeatAt - 0.05);
+      tl.fromTo("#stamp-rep", { scale: 1.8, rotation: -8, opacity: 0 }, { scale: 1, rotation: -8, opacity: 1, duration: 0.2, ease: "back.out(1.7)" }, repeatAt);
+      tl.to("#card", { x: 7, duration: 0.04, repeat: 3, yoyo: true, ease: "none" }, repeatAt + 0.18);
+      // Someone types the classic answer.
+      tl.fromTo("#cursor", { opacity: 0 }, { opacity: 1, duration: 0.01 }, commentAt - 0.1);
+      tl.to("#comment .ch", { opacity: 1, duration: 0.01, stagger: 0.03, ease: "steps(1)" }, commentAt);
+      tl.to("#cursor", { opacity: 0, duration: 0.01, repeat: 5, yoyo: true, ease: "steps(1)" }, Math.min(typingEnd + 0.1, 5.6));
+      // Exit: short and clean, no flying.
+      tl.to("#card", { y: -40, opacity: 0, duration: 0.32, ease: "power2.in" }, 6.0);
+      tl.to("#sys", { opacity: 0, duration: 0.25, ease: "power2.in" }, 6.0);
+      window.__timelines["notification-card"] = tl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+#!/bin/sh
+# Secret scan before every commit (installed by scripts/bootstrap.sh).
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks git --staged --no-banner --redact || { echo "gitleaks: possible secrets found — commit stopped"; exit 1; }
+else
+  echo "gitleaks is not installed: brew install gitleaks" >&2
+fi

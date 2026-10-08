@@ -1,0 +1,268 @@
+{
+  "shots": [
+    {
+      "id": "S01",
+      "class": "SHOOT_THIS",
+      "duration": 4.5,
+      "camera": "phone on tripod, vertical 1080x1920, eye level",
+      "framing": "medium close-up, eyes in the upper third",
+      "action": "Looks at the laptop, then at camera on 'And I started nothing.'",
+      "speech": "Every morning my to-do list got longer. And I started nothing.",
+      "environment": "Alex's desk, laptop, plain wall behind",
+      "lighting": "soft window light from the side, no color gels",
+      "props": "laptop open, sticky note with a long list",
+      "screenRecording": "none",
+      "requiredAsset": "video/footage/S01.mov",
+      "motionGraphics": "lower third + accent",
+      "audio": "lav or phone mic, room tone 5 s",
+      "notes": "Keep the eyes clear of the top headline accent.",
+      "blockIds": [
+        "b01"
+      ],
+      "assetId": "shoot-s01",
+      "draftSubstitute": "assets/acme-focus/footage/desk-vertical.mp4"
+    },
+    {
+      "id": "S02",
+      "class": "SHOOT_THIS",
+      "duration": 2.5,
+      "camera": "same setup as S01",
+      "framing": "medium close-up",
+      "action": "Says the beta line to camera.",
+      "speech": "Three of five beta features shipped.",
+      "environment": "Alex's desk, laptop, plain wall behind",
+      "lighting": "soft window light from the side, no color gels",
+      "props": "laptop",
+      "screenRecording": "none",
+      "requiredAsset": "video/footage/S02.mov",
+      "motionGraphics": "progress bar in the lower third",
+      "audio": "same mic",
+      "notes": "Line must match facts.yaml publicWording.",
+      "blockIds": [
+        "b02"
+      ],
+      "assetId": "shoot-s02",
+      "draftSubstitute": "placeholder scene"
+    },
+    {
+      "id": "S03",
+      "class": "SHOOT_THIS",
+      "duration": 5.8,
+      "camera": "same setup, slightly wider",
+      "framing": "medium shot, hands and laptop in frame",
+      "action": "Reaches for the laptop, opens email instead of the task.",
+      "speech": "A long list makes you choose first. Choosing feels like work — so you open email instead.",
+      "environment": "Alex's desk, laptop, plain wall behind",
+      "lighting": "soft window light from the side, no color gels",
+      "props": "laptop with a blank email client (no real inbox, no personal data)",
+      "screenRecording": "none",
+      "requiredAsset": "video/footage/S03.mov",
+      "motionGraphics": "notification card overlay (G01)",
+      "audio": "same mic",
+      "notes": "Do not film a real inbox.",
+      "blockIds": [
+        "b03"
+      ],
+      "assetId": "shoot-s03",
+      "draftSubstitute": "assets/acme-focus/footage/desk-vertical.mp4"
+    },
+    {
+      "id": "S04",
+      "class": "SHOOT_THIS",
+      "duration": 4.8,
+      "camera": "same setup",
+      "framing": "medium close-up",
+      "action": "Delivers the payoff line, calm.",
+      "speech": "Twenty-five minutes, one task. And no streak to lose if you skip tomorrow.",
+      "environment": "Alex's desk, laptop, plain wall behind",
+      "lighting": "soft window light from the side, no color gels",
+      "props": "phone with the timer",
+      "screenRecording": "none",
+      "requiredAsset": "video/footage/S04.mov",
+      "motionGraphics": "title card covers the first half",
+      "audio": "same mic",
+      "notes": "Optional cover: the edit uses title + done screen; keep as a safety take.",
+      "blockIds": [
+        "b05"
+      ],
+      "assetId": "shoot-s04",
+      "draftSubstitute": null
+    },
+    {
+      "id": "S05",
+      "class": "SHOOT_THIS",
+      "duration": 2.0,
+      "camera": "same setup",
+      "framing": "medium close-up",
+      "action": "Asks the question to camera.",
+      "speech": "It's in public beta on iOS. Tell me what breaks your focus.",
+      "environment": "Alex's desk, laptop, plain wall behind",
+      "lighting": "soft window light from the side, no color gels",
+      "props": "none",
+      "screenRecording": "none",
+      "requiredAsset": "video/footage/S05.mov",
+      "motionGraphics": "CTA card follows",
+      "audio": "same mic",
+      "notes": "Speech continues over the CTA card.",
+      "blockIds": [
+        "b06"
+      ],
+      "assetId": "shoot-s05",
+      "draftSubstitute": "assets/acme-focus/footage/desk-vertical.mp4"
+    },
+    {
+      "id": "E01",
+      "class": "EXISTING_ASSET",
+      "duration": 3.1,
+      "camera": "n/a",
+      "framing": "full frame (cover crop of a 16:9 still)",
+      "action": "Blockout of a future screen.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "none",
+      "requiredAsset": "assets/acme-focus/preview/blockout.png",
+      "motionGraphics": "honesty label",
+      "audio": "—",
+      "notes": "Example blockout, labeled BLOCKOUT · NOT THE REAL PRODUCT.",
+      "blockIds": [
+        "b02"
+      ],
+      "assetId": "example-blockout",
+      "draftSubstitute": null
+    },
+    {
+      "id": "E02",
+      "class": "EXISTING_ASSET",
+      "duration": 5.0,
+      "camera": "n/a",
+      "framing": "phone frame, centered",
+      "action": "Start screen, then hard cut to the running timer.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "task.png → timer.png (example UI)",
+      "requiredAsset": "assets/acme-focus/screens/task.png; assets/acme-focus/screens/timer.png",
+      "motionGraphics": "label EXAMPLE UI · FICTIONAL APP",
+      "audio": "ui-pop on the cut",
+      "notes": "Replace with real app screenshots when available.",
+      "blockIds": [
+        "b04"
+      ],
+      "assetId": "example-task",
+      "draftSubstitute": null
+    },
+    {
+      "id": "E03",
+      "class": "EXISTING_ASSET",
+      "duration": 2.9,
+      "camera": "n/a",
+      "framing": "phone frame, centered",
+      "action": "Done screen: 'no streaks · no scores'.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "done.png (example UI)",
+      "requiredAsset": "assets/acme-focus/screens/done.png",
+      "motionGraphics": "label EXAMPLE UI · FICTIONAL APP",
+      "audio": "—",
+      "notes": "Matches fact acme-focus-no-streaks.",
+      "blockIds": [
+        "b05"
+      ],
+      "assetId": "example-done",
+      "draftSubstitute": null
+    },
+    {
+      "id": "G01",
+      "class": "GENERATE_THIS",
+      "duration": 4.6,
+      "camera": "n/a",
+      "framing": "card in the upper half",
+      "action": "Inbox card lands; status NEW → OPENED.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "none",
+      "requiredAsset": "Remotion card scene (NotificationCard)",
+      "motionGraphics": "header ILLUSTRATION · INBOX",
+      "audio": "ui-notify on entry",
+      "notes": "Illustration, not a real notification.",
+      "blockIds": [
+        "b03"
+      ],
+      "assetId": "gen-card",
+      "draftSubstitute": null
+    },
+    {
+      "id": "G02",
+      "class": "GENERATE_THIS",
+      "duration": 2.2,
+      "camera": "n/a",
+      "framing": "lower third",
+      "action": "Progress bar fills to 3/5.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "none",
+      "requiredAsset": "Remotion progress scene, factId acme-focus-beta-progress",
+      "motionGraphics": "BETA MILESTONE",
+      "audio": "—",
+      "notes": "Value 0.6 = 3 of 5 (PUBLIC_CONFIRMED).",
+      "blockIds": [
+        "b02"
+      ],
+      "assetId": "gen-progress",
+      "draftSubstitute": null
+    },
+    {
+      "id": "G03",
+      "class": "GENERATE_THIS",
+      "duration": 2.3,
+      "camera": "n/a",
+      "framing": "CTA band",
+      "action": "Editorial CTA card with logo.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "none",
+      "requiredAsset": "Remotion cta scene",
+      "motionGraphics": "Link in bio · ACME FOCUS",
+      "audio": "—",
+      "notes": "Editorial: not spoken, not in the SRT.",
+      "blockIds": [
+        "b06"
+      ],
+      "assetId": "gen-cta",
+      "draftSubstitute": null
+    },
+    {
+      "id": "G04",
+      "class": "GENERATE_THIS",
+      "duration": 1.9,
+      "camera": "n/a",
+      "framing": "center",
+      "action": "Title card '25 minutes / one task'.",
+      "speech": "—",
+      "environment": "n/a",
+      "lighting": "n/a",
+      "props": "n/a",
+      "screenRecording": "none",
+      "requiredAsset": "Remotion title scene",
+      "motionGraphics": "coral gradient on 'one task'",
+      "audio": "whoosh-soft on entry",
+      "notes": "Spoken phrase: captions are suppressed while it is on screen.",
+      "blockIds": [
+        "b05"
+      ],
+      "assetId": "gen-title",
+      "draftSubstitute": null
+    }
+  ]
+}

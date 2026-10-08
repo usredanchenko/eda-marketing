@@ -1,0 +1,71 @@
+{
+  "ideaId": "i01",
+  "hooks": [
+    {
+      "id": "h01",
+      "type": "confession",
+      "voice": "Every morning my to-do list got longer. And I started nothing.",
+      "visual": "Alex at the desk, laptop open, looks at camera (S01).",
+      "text": "And I started nothing.",
+      "payoffBlockId": "b05",
+      "payoff": "One task and one 25-minute timer replace the choosing; no streak to lose.",
+      "risk": "Low: personal, no product claim.",
+      "selected": true
+    },
+    {
+      "id": "h02",
+      "type": "controversial_opinion",
+      "voice": "Your to-do list is the reason you don't start.",
+      "visual": "Alex points at a long list on a sticky note (S01 alt).",
+      "text": "The list is the problem",
+      "payoffBlockId": "b03",
+      "payoff": "A long list makes you choose first, and choosing feels like work.",
+      "risk": "Medium: sounds absolute; soften to 'my list'.",
+      "selected": false
+    },
+    {
+      "id": "h03",
+      "type": "question",
+      "voice": "Why is starting harder than the work itself?",
+      "visual": "Close-up of the start screen question (task.png).",
+      "text": "Why is starting so hard?",
+      "payoffBlockId": "b03",
+      "payoff": "Because a long list asks for a decision before any work.",
+      "risk": "Low; question hooks can feel generic.",
+      "selected": false
+    },
+    {
+      "id": "h04",
+      "type": "visual_surprise",
+      "voice": "This card is how my mornings used to go.",
+      "visual": "Notification card slams in over the desk: 'Quick question (5 min?)'.",
+      "text": "Quick question (5 min?)",
+      "payoffBlockId": "b04",
+      "payoff": "The app asks one question instead: what is the one task?",
+      "risk": "Card is illustrative and must stay labeled.",
+      "selected": false
+    },
+    {
+      "id": "h05",
+      "type": "demonstration",
+      "voice": "One question, one timer. Watch.",
+      "visual": "Phone: task screen → Start → timer running (task.png → timer.png).",
+      "text": "One question. One timer.",
+      "payoffBlockId": "b04",
+      "payoff": "Shows the one-task start on example UI.",
+      "risk": "Medium: product-first opening may read as an ad.",
+      "selected": false
+    },
+    {
+      "id": "h06",
+      "type": "result_first",
+      "voice": "Twenty-five minutes on one task beat my whole list.",
+      "visual": "Done screen with the full ring (done.png).",
+      "text": "25 minutes, one task",
+      "payoffBlockId": "b05",
+      "payoff": "Explains why one task is easier to start than a list.",
+      "risk": "High: reads like an outcome promise; avoid.",
+      "selected": false
+    }
+  ]
+}

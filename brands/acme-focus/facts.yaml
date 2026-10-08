@@ -1,0 +1,53 @@
+# FICTIONAL example brand: these facts exist only to demonstrate statuses. Replace with your own.
+brand: acme-focus
+updated: "2026-10-08"
+facts:
+  - id: acme-focus-what-it-is
+    statement: "Acme Focus is a focus-timer app: one timer, one task."
+    status: PUBLIC_CONFIRMED
+    publicWording: "One timer, one task."
+    source: "fictional example — brand owner"
+    checked: "2026-10-08"
+  - id: acme-focus-ios-beta
+    statement: "The app is in public beta on iOS."
+    status: PUBLIC_CONFIRMED
+    publicWording: "Public beta on iOS"
+    source: "fictional example — App Store listing"
+    checked: "2026-10-08"
+  - id: acme-focus-no-streaks
+    statement: "The app has no streaks and no leaderboards."
+    status: PUBLIC_CONFIRMED
+    source: "fictional example — product spec"
+    checked: "2026-10-08"
+  - id: acme-focus-offline
+    statement: "The timer works offline."
+    status: PUBLIC_CONFIRMED
+    source: "fictional example — product spec"
+    checked: "2026-10-08"
+  - id: acme-focus-beta-progress
+    statement: "Beta milestone: 3 of 5 planned features shipped."
+    status: PUBLIC_CONFIRMED
+    publicWording: "3 of 5 beta features shipped"
+    source: "fictional example — public changelog"
+    checked: "2026-10-08"
+  - id: acme-focus-roadmap
+    statement: "Calendar integration is being explored."
+    status: INTERNAL
+    source: "fictional example — planning notes"
+    checked: "2026-10-08"
+  - id: acme-focus-user-count
+    statement: "Number of beta users."
+    status: NEEDS_CONFIRMATION
+    source: "fictional example — no public number"
+    note: "Never show a user count until the owner confirms a public figure."
+    checked: "2026-10-08"
+  - id: acme-focus-android
+    statement: "Android version availability."
+    status: NEEDS_CONFIRMATION
+    source: "fictional example — in development, no date"
+    checked: "2026-10-08"
+  - id: acme-focus-productivity-claims
+    statement: "Claims that the app measurably increases productivity."
+    status: FORBIDDEN
+    source: "fictional example — no study exists"
+    checked: "2026-10-08"

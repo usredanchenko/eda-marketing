@@ -1,0 +1,112 @@
+{
+  "id": "acme-focus",
+  "language": "en",
+  "names": {
+    "working": "Acme Focus",
+    "public": "Acme Focus",
+    "publicNameStatus": "confirmed",
+    "spellings": [
+      "Acme Focus",
+      "AcmeFocus",
+      "Acme"
+    ]
+  },
+  "author": {
+    "name": "Alex",
+    "role": "solo developer of Acme Focus"
+  },
+  "defaults": {
+    "mode": "standard",
+    "template": "DevDiary",
+    "formats": [
+      "9x16"
+    ],
+    "platforms": [
+      "tiktok",
+      "instagram",
+      "youtube"
+    ],
+    "durationSec": [
+      20,
+      35
+    ],
+    "captionMode": "replace",
+    "fps": 30
+  },
+  "speech": {
+    "syllablesPerSec": 4.6,
+    "calibrated": false,
+    "note": "Estimate before calibration. After the first recording: npm run mos -- captions calibrate <package> <raw-asr file> --write."
+  },
+  "captions": {
+    "protectedPhrases": [
+      "Acme Focus",
+      "one timer, one task",
+      "link in bio",
+      "App Store"
+    ]
+  },
+  "claims": {
+    "forbiddenPatterns": [
+      "scientifically proven",
+      "(doubles?|triples?|10x) (your )?(productivity|focus|output)",
+      "guaranteed (focus|results)"
+    ],
+    "needsConfirmationPatterns": [
+      "\\b\\d[\\d,. ]*\\s?(k|K|M|000)?\\s?(users|downloads|installs|reviews)\\b",
+      "\\bAndroid\\b|\\bGoogle Play\\b|web app|\\bsync\\b",
+      "\\b\\d(\\.\\d)? stars?\\b|rating"
+    ]
+  },
+  "cta": {
+    "editorial": [
+      "Link in bio",
+      "Follow the build"
+    ],
+    "spoken": [
+      "Tell me what breaks your focus",
+      "Follow if you want the beta"
+    ]
+  },
+  "hashtags": {
+    "core": [
+      "#buildinpublic",
+      "#focus",
+      "#indiedev"
+    ],
+    "max": 5
+  },
+  "ideaWeights": {
+    "relevance": 1.2,
+    "novelty": 1.0,
+    "audienceFit": 1.1,
+    "visualPotential": 1.0,
+    "emotionalPotential": 1.0,
+    "storytellingPotential": 1.1,
+    "productionComplexity": 0.8,
+    "authenticity": 1.3,
+    "productRelevance": 1.1
+  },
+  "research": {
+    "themes": [
+      "focus",
+      "procrastination",
+      "pomodoro",
+      "build in public",
+      "indie apps"
+    ],
+    "queries": [
+      "why can't I start working",
+      "pomodoro timer doesn't work for me",
+      "productivity app guilt streaks",
+      "solo developer build in public shorts"
+    ],
+    "communities": [
+      "r/productivity",
+      "r/getdisciplined",
+      "r/SideProject",
+      "r/iosapps",
+      "Hacker News"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "eda-marketing",
+  "private": true,
+  "type": "module",
+  "description": "Claude Code plugin + workspace for short-form video marketing: research → ideas → hooks → script → shot list → Remotion montage → HyperFrames motion → captions → publish copy → QA → analytics.",
+  "workspaces": [
+    "packages/core",
+    "engine",
+    "video/remotion",
+    "video/hyperframes"
+  ],
+  "scripts": {
+    "mos": "tsx engine/src/cli.ts",
+    "studio": "tsx engine/src/cli.ts video register && npm --workspace @mos/remotion run studio --",
+    "test": "vitest run",
+    "test:remotion": "tsx engine/src/cli.ts video register && tsx scripts/test-remotion.ts",
+    "test:render": "tsx scripts/test-render.ts",
+    "test:hf": "tsx scripts/test-hyperframes.ts",
+    "lint": "tsc -p packages/core && tsc -p engine && npm --workspace @mos/remotion run lint",
+    "check": "tsx engine/src/cli.ts video register && npm run lint && npm test && tsx engine/src/cli.ts validate --all"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.4",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usredanchenko/eda-marketing.git"
+  }
+}

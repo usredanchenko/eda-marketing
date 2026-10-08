@@ -1,0 +1,24 @@
+# YouTube Studio → Analytics → Advanced mode → Export current view (CSV "Table data"). Check the columns against a real file and set verified: true.
+# Column aliases include Russian-locale export headers; they are data, keep them.
+id: youtube-studio-advanced
+platform: youtube
+verified: false
+columns:
+  video_id: ["Content", "Video", "Контент", "Видео"]
+  topic: ["Video title", "Название видео"]
+  date: ["Video publish time", "Время публикации видео"]
+  duration: ["Duration", "Длительность"]
+  views: ["Views", "Просмотры"]
+  likes: ["Likes", "Отметки «Нравится»"]
+  comments: ["Comments added", "Добавленные комментарии"]
+  shares: ["Shares", "Поделились"]
+  followers_gained: ["Subscribers gained", "Подписчики", "Новые подписчики"]
+  watch_time: ["Watch time (hours)", "Время просмотра (часы)"]
+  average_watch_time: ["Average view duration", "Средняя продолжительность просмотра"]
+  completion_rate: ["Average percentage viewed (%)", "Средний процент просмотра (%)"]
+  reach: ["Impressions", "Показы"]
+transforms:
+  watch_time: count
+  average_watch_time: duration
+  completion_rate: percent
+  duration: duration

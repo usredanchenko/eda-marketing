@@ -1,0 +1,22 @@
+# Confidence thresholds for analytics-review. Conclusions are drawn only from our own data.
+thresholds:
+  insufficient: 3   # n < 3 — no conclusion at all
+  low: 5
+  medium: 10
+  high: 30
+# Metrics in priority order for comparing formats/hooks (when the platform provides them).
+primaryMetrics:
+  - completion_rate
+  - average_watch_time
+  - shares
+  - saves
+  - followers_gained
+  - views
+dimensions:
+  - brand
+  - platform
+  - hook_type
+  - format
+  - duration_bucket
+  - cta
+durationBuckets: [15, 25, 35, 45, 60]

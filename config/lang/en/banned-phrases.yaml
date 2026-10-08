@@ -1,0 +1,52 @@
+# Anti-slop for English copy: phrases that turn text into an "ad announcer" voice or an AI template.
+# Loaded for brands with brand.json → language: en.
+# severity: error — blocks `script check`; warn — allowed only with an explicit reason in SCRIPT_REVIEW.md.
+# pattern — case-insensitive regular expression (JS, flags "giu"). Apostrophes match both ' and ’.
+rules:
+  # Openers and filler cadence
+  - { id: todays-world, pattern: "\\bin today[’']?s (fast[- ]paced|digital|modern|ever[- ]changing|busy) world\\b", severity: error }
+  - { id: ever-wondered, pattern: "\\b(have you )?ever wondered\\b", severity: warn }
+  - { id: imagine-a-world, pattern: "\\bimagine (a world|if you could)\\b", severity: warn }
+  - { id: lets-be-honest, pattern: "\\blet[’']?s be (honest|real)\\b", severity: warn }
+  - { id: heres-the-thing, pattern: "\\bhere[’']?s the (thing|kicker|catch)\\b", severity: warn }
+  - { id: buckle-up, pattern: "\\bbuckle up\\b", severity: error }
+  - { id: dive-in, pattern: "\\b(let[’']?s |time to )?dive (in|into|deep)\\b|\\bdeep dive\\b", severity: warn }
+  - { id: delve, pattern: "\\bdelv(e|es|ed|ing)\\b", severity: error }
+  - { id: not-x-its-y, pattern: "\\b(it[’']?s|this is|that[’']?s) not (just )?(about )?[^.!?,;]{1,40}[,;—–-]+ ?(it[’']?s|this is|that[’']?s)\\b", severity: warn }
+  - { id: whether-youre, pattern: "\\bwhether you[’']?re an? \\w+ or\\b", severity: warn }
+  - { id: look-no-further, pattern: "\\blook no further\\b", severity: error }
+  - { id: at-the-end-of-the-day, pattern: "\\bat the end of the day\\b|\\bin conclusion\\b", severity: warn }
+  - { id: nobody-talks-about, pattern: "\\b(nobody is|no one is|no one[’']?s) talking about\\b", severity: warn }
+  # Hype adjectives and verbs
+  - { id: game-changer, pattern: "\\bgame[- ]chang\\w*", severity: error }
+  - { id: revolutionary, pattern: "\\brevolutionary\\b|\\brevolutioni[sz]\\w*", severity: error }
+  - { id: seamless, pattern: "\\bseamless\\w*", severity: error }
+  - { id: cutting-edge, pattern: "\\bcutting[- ]edge\\b|\\bstate[- ]of[- ]the[- ]art\\b", severity: error }
+  - { id: next-gen, pattern: "\\bnext[- ]gen\\w*", severity: error }
+  - { id: innovative, pattern: "\\binnovativ\\w*", severity: error }
+  - { id: best-in-class, pattern: "\\b(best[- ]in[- ]class|world[- ]class)\\b", severity: error }
+  - { id: unparalleled, pattern: "\\b(unparalleled|unprecedented|unmatched)\\b", severity: error }
+  - { id: mind-blowing, pattern: "\\bmind[- ]?blowing\\b", severity: error }
+  - { id: unlock-power, pattern: "\\bunlock (the|your) (full |true )?(power|potential)\\b", severity: error }
+  - { id: unlock, pattern: "\\bunlock\\w*(?! (the|your) (full |true )?(power|potential))", severity: warn }
+  - { id: harness-power, pattern: "\\bharness(es|ed|ing)? the power\\b", severity: error }
+  - { id: unleash, pattern: "\\bunleash\\w*", severity: error }
+  - { id: supercharge, pattern: "\\bsupercharg\\w*", severity: error }
+  - { id: next-level, pattern: "\\b(take|takes|taking|took) (it|this|things|your \\w+) to the next level\\b", severity: error }
+  - { id: level-up, pattern: "\\blevel(s|ed|ing)? up\\b", severity: warn }
+  - { id: elevate, pattern: "\\belevat(e|es|ed|ing)\\b", severity: warn }
+  - { id: empower, pattern: "\\bempower\\w*", severity: warn }
+  - { id: leverage, pattern: "\\bleverag\\w*", severity: warn }
+  - { id: changes-everything, pattern: "\\b(this )?changes everything\\b", severity: error }
+  - { id: future-is-now, pattern: "\\bthe future is (now|here)\\b", severity: error }
+  - { id: tapestry-realm, pattern: "\\b(rich )?tapestry\\b|\\bin the realm of\\b|\\bever[- ]evolving landscape\\b", severity: error }
+  - { id: ultimate-guide, pattern: "\\bultimate (guide|solution)\\b", severity: warn }
+  - { id: journey, pattern: "\\b(on a|this|your) journey\\b", severity: warn }
+  - { id: cinematic, pattern: "\\bcinematic\\b", severity: warn }
+  # Announcements and calls to action
+  - { id: excited-to-announce, pattern: "\\b(we[’']?re |we are )?(so )?(excited|thrilled|proud|happy) to (announce|introduce|share|present)\\b", severity: error }
+  - { id: dont-miss, pattern: "\\bdon[’']?t miss (out|this)\\b", severity: warn }
+  - { id: subscribe-beg, pattern: "\\b(follow|subscribe) (so you don[’']?t miss|for more)\\b", severity: warn }
+  - { id: secret-hack, pattern: "\\b(simple|secret|little[- ]known) (trick|hack)s?\\b", severity: warn }
+  # Platform myths (need an official platform source)
+  - { id: algorithm-claim, pattern: "\\balgorithm\\w* (promot|love|reward|punish|favou?r|boost)\\w*", severity: error }

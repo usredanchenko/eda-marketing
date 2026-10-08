@@ -1,0 +1,69 @@
+1
+00:00:00,080 --> 00:00:02,939
+Every morning my to-do list
+got longer.
+
+2
+00:00:03,009 --> 00:00:04,346
+And I started nothing.
+
+3
+00:00:04,580 --> 00:00:05,392
+I'm Alex,
+
+4
+00:00:05,392 --> 00:00:07,816
+building a focus timer
+on my own.
+
+5
+00:00:07,886 --> 00:00:09,875
+Three of five beta features
+shipped.
+
+6
+00:00:10,180 --> 00:00:11,952
+A long list makes you choose
+first.
+
+7
+00:00:12,022 --> 00:00:13,309
+Choosing feels like work —
+
+8
+00:00:13,309 --> 00:00:15,298
+so you open email instead.
+
+9
+00:00:15,980 --> 00:00:17,504
+So the app asks one thing:
+
+10
+00:00:17,504 --> 00:00:18,841
+what is the one task?
+
+11
+00:00:18,911 --> 00:00:20,248
+Then one timer starts.
+
+12
+00:00:20,980 --> 00:00:22,227
+Twenty-five minutes,
+
+13
+00:00:22,227 --> 00:00:22,912
+one task.
+
+14
+00:00:22,982 --> 00:00:25,623
+And no streak to lose if you
+skip tomorrow.
+
+15
+00:00:25,780 --> 00:00:27,769
+It's in public beta on iOS.
+
+16
+00:00:27,839 --> 00:00:29,611
+Tell me what breaks
+your focus.

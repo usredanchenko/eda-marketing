@@ -1,0 +1,200 @@
+{
+  "generated": "npm run mos -- video manifest (from props.json)",
+  "packageId": "2026-10-08-acme-focus-why-a-25-minute-timer-beats-a-to-do-list",
+  "format": "9x16",
+  "fps": 30,
+  "durationSec": 30,
+  "durationInFrames": 900,
+  "captions": {
+    "mode": "replace",
+    "timingSource": "estimated",
+    "pages": 13
+  },
+  "voice": [],
+  "music": null,
+  "sfx": [
+    {
+      "id": "sfx-card",
+      "src": "assets/shared/sfx/ui-notify.wav",
+      "at": 11,
+      "volume": 0.7,
+      "reason": "the illustrative inbox card lands (the distraction)",
+      "frame": 330
+    },
+    {
+      "id": "sfx-timer",
+      "src": "assets/shared/sfx/ui-pop.wav",
+      "at": 18.9,
+      "volume": 0.6,
+      "reason": "cut to the running timer: the one task starts",
+      "frame": 567
+    },
+    {
+      "id": "sfx-title",
+      "src": "assets/shared/sfx/whoosh-soft.wav",
+      "at": 20.9,
+      "volume": 0.5,
+      "reason": "payoff title '25 minutes / one task'",
+      "frame": 627
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "kind": "footage",
+      "layer": "base",
+      "from": 0,
+      "duration": 4.5,
+      "fromFrame": 0,
+      "durationInFrames": 135,
+      "source": "assets/acme-focus/footage/desk-vertical.mp4",
+      "sourceIn": 0,
+      "sourceOut": 4.5,
+      "draftNote": "stand-in footage — replace with S01"
+    },
+    {
+      "id": "s01-lt",
+      "kind": "lowerThird",
+      "layer": "overlay",
+      "from": 0.6,
+      "duration": 2.3,
+      "fromFrame": 18,
+      "durationInFrames": 69,
+      "source": null,
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s02-blockout",
+      "kind": "preview",
+      "layer": "base",
+      "from": 4.5,
+      "duration": 3.1,
+      "fromFrame": 135,
+      "durationInFrames": 93,
+      "source": "assets/acme-focus/preview/blockout.png",
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s02-intro",
+      "kind": "placeholder",
+      "layer": "base",
+      "from": 7.6,
+      "duration": 2.5,
+      "fromFrame": 228,
+      "durationInFrames": 75,
+      "source": null,
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s02-progress",
+      "kind": "progress",
+      "layer": "overlay",
+      "from": 7.8,
+      "duration": 2.2,
+      "fromFrame": 234,
+      "durationInFrames": 66,
+      "source": null,
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s03-reach",
+      "kind": "footage",
+      "layer": "base",
+      "from": 10.1,
+      "duration": 5.8,
+      "fromFrame": 303,
+      "durationInFrames": 174,
+      "source": "assets/acme-focus/footage/desk-vertical.mp4",
+      "sourceIn": 4.5,
+      "sourceOut": 10.3,
+      "draftNote": "stand-in footage — replace with S03"
+    },
+    {
+      "id": "s03-card",
+      "kind": "card",
+      "layer": "overlay",
+      "from": 11,
+      "duration": 4.6,
+      "fromFrame": 330,
+      "durationInFrames": 138,
+      "source": null,
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s04-start",
+      "kind": "screen",
+      "layer": "base",
+      "from": 15.9,
+      "duration": 5,
+      "fromFrame": 477,
+      "durationInFrames": 150,
+      "source": "assets/acme-focus/screens/task.png",
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s05-title",
+      "kind": "title",
+      "layer": "base",
+      "from": 20.9,
+      "duration": 1.9,
+      "fromFrame": 627,
+      "durationInFrames": 57,
+      "source": null,
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s05-done",
+      "kind": "screen",
+      "layer": "base",
+      "from": 22.8,
+      "duration": 2.9,
+      "fromFrame": 684,
+      "durationInFrames": 87,
+      "source": "assets/acme-focus/screens/done.png",
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    },
+    {
+      "id": "s06-ask",
+      "kind": "footage",
+      "layer": "base",
+      "from": 25.7,
+      "duration": 2,
+      "fromFrame": 771,
+      "durationInFrames": 60,
+      "source": "assets/acme-focus/footage/desk-vertical.mp4",
+      "sourceIn": 8.5,
+      "sourceOut": 10.5,
+      "draftNote": "stand-in footage — replace with S05"
+    },
+    {
+      "id": "s06-cta",
+      "kind": "cta",
+      "layer": "base",
+      "from": 27.7,
+      "duration": 2.3,
+      "fromFrame": 831,
+      "durationInFrames": 69,
+      "source": null,
+      "sourceIn": null,
+      "sourceOut": null,
+      "draftNote": null
+    }
+  ],
+  "colorFilters": []
+}

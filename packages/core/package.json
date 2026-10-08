@@ -1,0 +1,16 @@
+{
+  "name": "@mos/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared zod schemas and pure TypeScript logic (captions, layout, timing, similarity). No fs access, so Remotion can bundle it.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.534",
+    "zod": "4.5.4"
+  },
+  "license": "MIT"
+}
