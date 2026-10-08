@@ -5,7 +5,7 @@ import { run } from "../lib/exec";
 import { ensureDir, exists, sha256File } from "../lib/fsx";
 import { UserError } from "../lib/out";
 import { ROOT } from "../lib/paths";
-import { remotionDir } from "../video/register";
+import { registerCompositions, remotionDir } from "../video/register";
 
 /**
  * Generates every asset the fictional example brand needs, locally: animated gradient "footage"
@@ -42,6 +42,8 @@ export const generateExamples = async (o: { force?: boolean } = {}) => {
     await record(rel, `ffmpeg lavfi: ${graph}`, "synthesized");
     out.push(rel);
   }
+  // The Remotion bundle imports the generated registry and brand tokens: make sure they exist (fresh clone).
+  await registerCompositions();
   for (const s of STILLS) {
     const abs = path.join(ROOT, s.rel);
     if (exists(abs) && !o.force) continue;
