@@ -44,22 +44,24 @@ Two drafts the pipeline produced for the author's own projects: brief → ideas 
 ## What it does
 
 ```mermaid
-flowchart LR
-  T([Topic]) --> B[Brief<br/><sub>only the unknowns</sub>]
-  B --> R[Research<br/><sub>FACT · OBSERVATION · HYPOTHESIS</sub>]
-  R --> I[10+ ideas<br/><sub>9 weighted criteria</sub>]
-  I --> H[5+ hooks<br/><sub>voice · visual · text · payoff</sub>]
-  H --> S[Timed script]
-  S --> V{{Review agents<br/><sub>critic · retention · brand-guard</sub>}}
-  V --> L[Shot list<br/><sub>SHOOT · GENERATE · EXISTING</sub>]
-  L --> G[/You approve/]
-  G --> E[Remotion edit]
-  E --> M[HyperFrames motion]
-  M --> C[Captions EN/RU]
-  C --> Q{{QA + video-qa}}
-  Q --> P[Publish copy<br/><sub>TikTok · Reels · Shorts</sub>]
-  P --> A[Analytics → learnings → next video]
-  A -.-> I
+flowchart TB
+  subgraph PRE["1 · Pre-production"]
+    direction LR
+    T([Topic]) --> B[Brief] --> R[Research] --> I[10+ ideas] --> H[5+ hooks] --> S[Timed script]
+  end
+  subgraph REV["2 · Review and plan"]
+    direction LR
+    V{{critic · retention · brand-guard}} --> L[Shot list] --> G[/You approve/]
+  end
+  subgraph PROD["3 · Production"]
+    direction LR
+    E[Remotion edit] --> M[HyperFrames motion] --> C[Captions EN/RU] --> Q{{QA + video-qa}} --> P[Publish copy]
+  end
+  subgraph LOOP["4 · Learn"]
+    direction LR
+    A[Analytics] --> N[Learnings] --> X([Next video])
+  end
+  PRE --> REV --> PROD --> LOOP
 ```
 
 - **One command, the whole pipeline.** `/eda-marketing:marketing video <brand> "<topic>"` walks the stages in `quick`, `standard`, `production` or `deep` mode and stops at every decision that is yours.
